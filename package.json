@@ -6,6 +6,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "npm run webapp:prod --",
+    "build-dev": "npm run webapp:build:dev --",
     "build-watch": "concurrently 'npm run webapp:build:dev -- --watch'",
     "ci:frontend:test": "npm run webapp:build:$npm_package_config_default_environment && npm run test-ci",
     "clean-www": "rimraf target/classes/static/app/{src,target/}",
